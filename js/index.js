@@ -38,3 +38,19 @@ let c = 0;
     document.querySelector('#summary').value = sum;
     document.querySelector('#price').value = sum;
 }
+
+
+
+function validateForm(data){
+        if (data.phone != null && data.phone.value.length == 0 ){
+        alert('Заповніть поля');
+        return false;
+        }
+        if(document.getElementById("categoryDj").checked === false && document
+                .getElementById("categoryParodist").checked === false && document
+                        .getElementById("categoryLeading").checked === false){
+        alert('Заповніть поля');
+        return false;
+        }
+}
+                
