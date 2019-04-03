@@ -139,14 +139,14 @@
               <p>Разом дешевше !</p>
               <br>
               <div class="feedback-form-label">
-              <label>Ваш мобільний номер: <input type="tel" name="phone"></label>
+              <label>Ваш мобільний номер: <input type="tel" name="phone" minlength="10"></label>
               <label>Ваша пошта:<input type="email" name="email"></label>
               <label>Ціна $: <input type="text" id="price" name="summary" disabled></label>
               <input type="hidden" name="summary" id="summary">
               </div>
               <textarea name="comment" placeholder="Ваша коментар:"></textarea>
               <br>
-              <div class="submit"><input type="submit"></div>
+              <div class="submit"><input type="submit" onclick="return validateForm(this.form)"></div>
           </form>
         </section>
     </main>
