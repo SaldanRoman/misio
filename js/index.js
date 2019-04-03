@@ -35,6 +35,6 @@ let c = 0;
     else{
          sum = a + b + c ;   
     }
-    
+    document.querySelector('#summary').value = sum;
     document.querySelector('#price').value = sum;
 }
