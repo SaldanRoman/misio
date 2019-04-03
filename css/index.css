@@ -2,14 +2,22 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body{
-    margin: 0;
+
     padding: 0;
     font-family: Helvetica, sans-serif;
 }
 
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#logo{
+    font-family: Helvetica, sans-serif;
+    color: ivory;
+}
 section h2{
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -33,14 +41,35 @@ nav ul li{
     margin-right: 10px;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.header-slider{
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.582);
+}
+
 .promo{
+    margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .promo-video{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
     flex-basis: 80%;
     height: 315px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.582);
+
 }
 
 .promo-video iframe{
@@ -62,8 +91,8 @@ nav ul li{
     margin: 20px auto;
     max-width: 300px;
     overflow: hidden;
-    border-radius: 10%;
-    box-shadow: -3px -3px 4px 3px blueviolet, 3px 3px 4px 3px rgb(233, 104, 18), 3px -5px 4px 4px rgb(233, 194, 18), -5px 3px 4px 4px rgb(233, 194, 18);
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.582);
 }
 
 .contaiber-photo-overflov>a>img{
@@ -96,7 +125,7 @@ nav ul li{
 
 .checkboxCategory:hover{
     transition-duration: 300ms;
-    box-shadow: -1px -1px 2px 2px blueviolet, 1px 1px 2px 2px rgb(233, 104, 18), 1px -2px 2px 2px rgb(233, 194, 18), -2px 1px 2px 2px rgb(233, 194, 18);
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.582);
 }
 
 label span{
@@ -123,10 +152,11 @@ label span{
 
 .feedback-form-label input:hover, .feedback-form-label input:focus, .feedback-form textarea:hover, .feedback-form textarea:focus{
     transition-duration: 300ms;
-    box-shadow: -1px -1px 2px 2px blueviolet, 1px 1px 2px 2px rgb(233, 104, 18), 1px -2px 2px 2px rgb(233, 194, 18), -2px 1px 2px 2px rgb(233, 194, 18);
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.582);
 }
 
 .feedback-form textarea{
+    transition-duration: 300ms;
     height: 220px;
     border: solid 1px rgba(0, 0, 0, 0.692);
 }
@@ -145,7 +175,7 @@ label span{
 
 .feedback-form input[type="submit"]:hover{
     transition-duration: 300ms;
-    box-shadow: -1px -1px 2px 2px blueviolet, 1px 1px 2px 2px rgb(233, 104, 18), 1px -2px 2px 2px rgb(233, 194, 18), -2px 1px 2px 2px rgb(233, 194, 18);
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.582);
 }
 
 footer{
@@ -156,13 +186,36 @@ footer{
     background-color: rgba(0, 0, 0, 0.692);
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
+.socials{
+    max-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-@media (min-width: 480px){
+.socials img{
+    width: 100%;
+    height: auto;
+}
+
+.socials p{
+    margin-top: 10px;
+    color: white;
+}
+
+@media (min-width: 550px){
     .logo-nav{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav{
+        margin-top: 15px;
     }
 
     nav ul {
@@ -174,7 +227,9 @@ footer{
     }
 
     .promo{
+        flex-wrap: wrap;
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .container-with-photo-category{
@@ -191,8 +246,13 @@ footer{
     }
 
     .promo-video{
-        flex-basis: 50%;
+        flex-basis: 40%;
+        margin: 10px;
     }
 
+    footer{
+        justify-content: space-around;
+        flex-direction: row;
+    }
 
 }
