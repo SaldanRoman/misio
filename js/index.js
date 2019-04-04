@@ -36,7 +36,7 @@ let c = 0;
          sum = a + b + c ;   
     }
     document.querySelector('#summary').value = sum;
-    document.querySelector('#price').value = sum;
+    document.querySelector('#price').innerText = `Ціна: ${sum} $`;
 }
 
 
@@ -49,7 +49,7 @@ function validateForm(data){
         if(document.getElementById("categoryDj").checked === false && document
                 .getElementById("categoryParodist").checked === false && document
                         .getElementById("categoryLeading").checked === false){
-        alert('Заповніть поля');
+        alert('Заповніть поля !');
         return false;
         }
 }
