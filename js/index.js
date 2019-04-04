@@ -43,7 +43,7 @@ let c = 0;
 
 function validateForm(data){
         if (data.phone != null && data.phone.value.length == 0 ){
-        alert('Заповніть поля');
+        alert('Заповніть поля !');
         return false;
         }
         if(document.getElementById("categoryDj").checked === false && document
